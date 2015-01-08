@@ -57,10 +57,10 @@ Thanks vellow
 </table>
 
 ################################
-需要安装mpg123
-例如：
-sudo apt-get install mpg123
-其他linux版本类似 
+ 需要安装mplayer
+ 例如：
+ sudo apt-get install mpg123
+ 其他linux版本类似 
 ################################	
 
 
