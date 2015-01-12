@@ -2,7 +2,7 @@ musicbox
 =================
 Thanks vellow
 
-感谢原作者vellow，原作者地址：https://github.com/darknessomi/musicbox
+感谢原作者vellow，原作者地址：https://github.com/darknessomi/NetEase-MusicBox
 
 本musicbox是由原作者vellow的musicbox修改而来
 
