@@ -340,21 +340,18 @@ class Menu:
                 self.index=self.player.return_idx()[0]+1
                 self.return_play_list()
                 self.player.next()
-                self.ui.build_loading(2)
-                time.sleep(2)
-                #self.offset=self.index//self.step*self.step
-                #self.ui.build_menu(self.datatype,self.title,self.datalist,self.offset,self.index,self.step)
+                for i in range(9):
+                    self.ui.build_loading(2)
+                    time.sleep(0.2)
             # 播放上一曲
             elif key == ord('['):
                 if len(self.presentsongs) == 0:
                     continue 
                 self.return_play_list()
-                #self.index=self.player.return_idx()[0]-1
-                #self.offset=self.index//self.step*self.step
-                #self.ui.build_menu(self.datatype,self.title,self.datalist,self.offset,self.index,self.step)
                 self.player.prev()
-                self.ui.build_loading(2)
-                time.sleep(1.5)
+                for i in range(9):
+                    self.ui.build_loading(2)
+                    time.sleep(0.2)
 
             # 播放、暂停
             elif key == ord(' '):
