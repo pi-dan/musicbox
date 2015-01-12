@@ -85,9 +85,9 @@ Thanks vellow
     $ sudo apt-get install python-setuptools
 	
 ### 使用
-
+      安装 sudo python setup.py
 	$ musicbox
-
+    或者进入scr目录直接运行: python __init__.py,需要安装额外的库，库名在setup.py里查看
 
 Enjoy it !
 
