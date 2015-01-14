@@ -2,8 +2,6 @@ musicbox
 =================
 Thanks vellow
 
-感谢原作者vellow，原作者地址：https://github.com/darknessomi/NetEase-MusicBox
-
 本musicbox是由原作者vellow的musicbox修改而来
 
 高品质网易云音乐命令行版本，简洁优雅，丝般顺滑，基于Python编写。
@@ -21,19 +19,14 @@ Thanks vellow
 7. 私人歌单
 8. 随心打碟
 9. 本地收藏（不提供下载）
-10. Vimer式快捷键让操作丝般顺滑
+10. Vimer式快捷键让操作丝般顺滑,支持上下左右键
 11. 可使用数字快捷键
-
-### 增加或修改功能：
-1. 轻微调整了显示界面
-2. 歌曲列表只显示歌名与作者，去掉了专辑名
-3. 增加了上下左右方向键支持（与k j h l 键功能相同）
-4. 歌曲列表更随当前播放歌曲
-5. 自动回到播放歌曲突出显示项，默认时间30s （在歌曲列表内）
-6. 增加了进度条
-7. 增加了歌曲播放桌面通知
-8. mpg123播放器替换成mplayer
-### 键盘快捷键
+12. 歌曲列表更随当前播放歌曲
+13. 自动回到播放歌曲突出显示项，默认时间30s （在歌曲列表内）
+14. 歌曲播放进度条
+15. 歌曲播放桌面通知
+ 
+ ### 键盘快捷键
 
 <table>
 	<tr> <td>J</td> <td>Down</td> <td>下移</td> </tr>
@@ -59,12 +52,12 @@ Thanks vellow
 ################################
  需要安装mplayer
  例如：
- sudo apt-get install mpg123
+ sudo apt-get install mplayer 
  其他linux版本类似 
 ################################	
 
 
-#### 错误处理
+ #### 错误处理
 
 1. pkg_resources.DistributionNotFound: requests
 	
@@ -84,7 +77,7 @@ Thanks vellow
     
     $ sudo apt-get install python-setuptools
 	
-### 使用
+ ### 使用
       安装 sudo python setup.py install
     在终端输入
 	$ musicbox
