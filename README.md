@@ -51,9 +51,13 @@ Thanks vellow
 
 ################################
  需要安装mplayer
+
  例如：
- sudo apt-get install mplayer 
+
+ sudo apt-get install mplayer
+
  其他linux版本类似 
+
 ################################	
 
 
@@ -78,9 +82,10 @@ Thanks vellow
     $ sudo apt-get install python-setuptools
 	
  ### 使用
-      安装 sudo python setup.py install
-    在终端输入
-	$ musicbox
+
+安装 sudo python setup.py install
+
+    在终端输入	$ musicbox
 
     或者进入scr目录直接运行: python __init__.py,需要安装额外的库，库名在setup.py里查看
 
