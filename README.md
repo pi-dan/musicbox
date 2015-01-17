@@ -87,7 +87,7 @@ Thanks vellow
 
 在终端输入	$ musicbox
 
-或者进入scr目录直接运行: python __init__.py,需要安装额外的库，库名在setup.py里查看
+或者进入scr目录直接运行: python  __init__.py ,需要安装额外的库，库名在setup.py里查看
 
 Enjoy it !
 
