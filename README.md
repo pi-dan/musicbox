@@ -77,10 +77,10 @@ Thanks vellow
 
 3. ImportError: No module named setuptools
     
-    $ sudo easy_install pip
-    
-    $ sudo apt-get install python-setuptools
-	
+    $ sudo apt-get install python-setuptool 
+
+	 $ sudo easy_install pip
+
  ### 使用
 
 安装 sudo python setup.py install
