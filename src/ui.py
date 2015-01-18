@@ -3,7 +3,7 @@
 # @Author: omi
 # @Date:   2014-08-24 21:51:57
 # @Last Modified by:   pi-dan
-# @Last Modified time: 2015-01-08 18:02:01
+# @Last Modified time: 2015-01-18 18:02:01
 
 
 '''
@@ -119,6 +119,14 @@ class Ui:
                         self.screen.addstr(i - offset +8+self.show_begin_line, 6, '-> ' + str(i) + '. ' + datalist[i]['playlists_name'] + '   -   ' + datalist[i]['creator_name'], curses.color_pair(2))
                     else:
                         self.screen.addstr(i - offset +8+self.show_begin_line, 9, str(i) + '. ' + datalist[i]['playlists_name'] + '   -   ' + datalist[i]['creator_name'])
+
+            elif datatype == 'toplists': #排行榜榜名
+                for i in range(offset, min(len(datalist),offset+step)):
+                    if i == index:
+                        self.screen.addstr(i-offset+8+self.show_begin_line, 7, '->' + str(i) + '. ' + datalist[i], curses.color_pair(2))
+                    else:
+                        self.screen.addstr(i - offset + 8 + self.show_begin_line, 9 ,str(i) + '. ' + datalist[i])
+
 
             elif datatype == 'playlist_classes' or datatype == 'playlist_class_detail':
                 for i in range(offset, min( len(datalist), offset+step) ):
