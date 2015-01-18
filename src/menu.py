@@ -3,7 +3,7 @@
 # @Author: omi
 # @Date:   2014-08-24 21:51:57
 # @Last Modified by:   pi-dan
-# @Last Modified time: 2015-01-08 18:02:04
+# @Last Modified time: 2015-01-18 18:02:04
 
 
 '''
@@ -426,8 +426,7 @@ class Menu:
 
             self.ui.build_menu(self.datatype, self.title, self.datalist, self.offset, self.index, self.step)
             self.ui.progress_bar(self.play_time_str,self.play_length_str)
-            self.ui.screen.refresh()
-            
+            self.ui.screen.refresh()       
         self.player.stop()
         sfile = file(Constant.conf_dir + "/flavor.json", 'w')
         data = {
@@ -501,14 +500,24 @@ class Menu:
             log.debug(self.datalist)
             self.title += ' > ' + data
 
+        #榜单
+        elif datatype == 'toplists':
+            songs=netease.top_songlist(idx)
+            self.title+=' > ' + self.datalist[idx]
+            self.datalist=netease.dig_info(songs,'songs')
+            self.datatype='songs'
+
+
+
     def choice_channel(self, idx):
         # 排行榜
         netease = self.netease
         if idx == 0:
-            songs = netease.top_songlist()
-            self.datalist = netease.dig_info(songs, 'songs')
+            #songs = netease.top_songlist()
+            #self.datalist = netease.dig_info(songs, 'songs')
+            self.datalist=netease.return_toplists()
             self.title += ' > 排行榜'
-            self.datatype = 'songs'
+            self.datatype = 'toplists'
 
         # 艺术家
         elif idx == 1:
