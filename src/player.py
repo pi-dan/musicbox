@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Author: omi
-# @Date:   2014-07-15 15:48:27
-# @Last Modified by:   pi-dan
-# @Last Modified time: 2015-01-08 18:02:00
+
 
 
 '''
